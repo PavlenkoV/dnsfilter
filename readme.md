@@ -49,7 +49,7 @@ You can use any web-server, but you need root to start it on port 80.
 ```  
 it will start twisted server, which is at /home/username/path/to/virtual_env/bin/twistd and will use current folder as root for server.  
 
-######Editing json.conf  
+#####Editing json.conf  
 Create blacklist:  
 You can add restricted domain names in json.conf , like 'name1, 'name2' etc, separated by comma:  
 ```

@@ -109,7 +109,7 @@ def main():
     """
     1) getting data from conf.json;
     2) updating Index.html;
-    3) run dnsfilter server
+    3) running dnsfilter server
     """
     openconf = InitialSetup().openConf()
     pattern = openconf[3]
