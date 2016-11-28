@@ -38,7 +38,7 @@ or
     $ sudo service network-manager restart  
 ```
 You can start web - server to get html page with specified answer if it's query for restricted domain names (you can edit this page in json.conf):
-You can use any web-server, but you need root to start it on port 80.
+You can use any web-server, but you need root to start it on port 80.  
 1) F.e, default python http-server (index.html and stop_page.jpg should be in same folder you start server)  
 ```
     $ sudo python -m http.server 80
@@ -62,7 +62,7 @@ Google DNS servers are default.
 Please be careful if you are using logging for all queries due to big amount of data
   * different options for index.html
 
-#####Run dnsfilter:
+#####Running dnsfilter:
 ```
     $ sudo /home/username/path/to/virtual_env/bin/python dnsfilter.py
 ```  
