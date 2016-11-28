@@ -111,7 +111,8 @@ def main():
     2) updating Index.html;
     3) running dnsfilter server
     """
-    openconf = InitialSetup().openConf()
+    setup = InitialSetup()
+    openconf = setup.openConf()
     pattern = openconf[3]
     server1 = openconf[4]
     server2 = openconf[5]
@@ -119,7 +120,7 @@ def main():
     log_flag_all = openconf[7]
 
     parser_data = openconf[0: 4]
-    InitialSetup().parsingIndexHTML(parser_data)
+    setup.parsingIndexHTML(parser_data)
 
     factory = server.DNSServerFactory(
         clients=[DynamicResolver(pattern, log_flag, log_flag_all),

@@ -12,7 +12,7 @@
         "show_forbidden_domains" : "yes"
     },
 
-    "log_file_forbidden" : "no",
+    "log_file_forbidden" : "yes",
 
     "log_file_all" : "no"
 
