@@ -1,0 +1,19 @@
+{
+    "servers": {
+        "primary" :   "8.8.8.8",
+        "secondary":  "8.8.4.4"
+    },
+
+    "blacklist":["vk.com", "odnoklassniki.ru"],
+
+    "html_page": {
+        "title" : "Title",
+        "text" : "You are trying to visit forbidden resource!",
+        "show_forbidden_domains" : "yes"
+    },
+
+    "log_file_forbidden" : "no",
+
+    "log_file_all" : "no"
+
+}
