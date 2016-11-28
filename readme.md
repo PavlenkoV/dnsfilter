@@ -55,7 +55,7 @@ You can add restricted domain names in json.conf , like 'name1, 'name2' etc, sep
 ```
     "blacklist":["vk.com", "odnoklassniki.ru"]  
 ```
-You can also specified:  
+You can also:  
   * specify DNS servers for response if query is not restricted  
 Google DNS servers are default.
   * starting/disabling logs for all queries or restricted only  
