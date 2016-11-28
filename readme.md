@@ -26,7 +26,9 @@ To disbale it:
     $ sudo service systemd-resolved stop  
 ```
 2) edit /etc/NetworkManager/NetworkManager.conf and comment out the line dns=dnsmasq to have line, like:  
-/#dns=dnsmasq  
+```
+    #dns=dnsmasq  
+```
 restart Network-Manager  
 ```bash
     $ sudo restart network-manager  
