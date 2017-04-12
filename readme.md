@@ -1,14 +1,14 @@
 # dnsfilter
 
-####It's simple DNS proxy filter server with configurable blacklist based on twisted framework for study projects (NOT for production).
+#### It's simple DNS proxy filter server with configurable blacklist based on twisted framework for study projects (NOT for production).
 
-#####Requirements  
+##### Requirements  
 python2 (version 2.7) and twisted (version 16.5.0)  
 It's strongly recommended to install inside isolated virtual environment!  
 More details http://docs.python-guide.org/en/latest/dev/virtualenvs/.  
 You need root to start dnsfilter on TCP/UDP port 53 (default setting for dnsfilter).  
 
-#####Initial Setup:  
+##### Initial Setup:  
 you can check if port 53 is free by:  
 1) run check_port.py (you need root to execute it), f.e  
 ```bash
@@ -49,7 +49,7 @@ You can use any web-server, but you need root to start it on port 80.
 ```  
 it will start twisted server, which is at /home/username/path/to/virtual_env/bin/twistd and will use current folder as root for server.  
 
-#####Editing json.conf  
+##### Editing json.conf  
 Create blacklist:  
 You can add restricted domain names in json.conf , like 'name1, 'name2' etc, separated by comma:  
 ```
@@ -62,12 +62,12 @@ Google DNS servers are default.
 Please be careful if you are using logging for all queries due to big amount of data
   * different options for index.html
 
-#####Running dnsfilter:
+##### Running dnsfilter:
 ```
     $ sudo /home/username/path/to/virtual_env/bin/python dnsfilter.py
 ```  
 
-#####Running test:
+##### Running test:
 '127.0.0.1' is default address for restricted queries.  
 You can check if all restricted queries from <mark>blacklist</mark> is redirected to it.  
 ```
